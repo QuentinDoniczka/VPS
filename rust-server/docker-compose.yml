@@ -26,8 +26,8 @@ services:
       +app.port 28082
       +spawn.min_rate 5
       +spawn.max_rate 5
-      +spawn.min_density 5
-      +spawn.max_density 5
+      +spawn.min_density 2
+      +spawn.max_density 2
       +env.daylength 45
       +env.nightlength 5
     volumes:
