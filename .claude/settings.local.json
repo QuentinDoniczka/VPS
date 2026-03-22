@@ -2,7 +2,9 @@
   "permissions": {
     "allow": [
       "Bash(ssh:*)",
-      "Bash(docker compose:*)"
+      "Bash(docker compose:*)",
+      "WebSearch",
+      "WebFetch(domain:github.com)"
     ]
   }
 }
