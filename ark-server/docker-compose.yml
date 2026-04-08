@@ -1,25 +1,26 @@
 services:
   ark-asa:
-    image: azixus/ark-ascended-docker:latest
+    image: sknnr/ark-ascended-server:latest
     container_name: ark-asa-server
-    tty: true
     restart: unless-stopped
-    env_file:
-      - .env
-    volumes:
-      - ./ark_data:/opt/arkserver
-      - ./ark_backup:/var/backups/asa-server
-      - steam_data:/opt/steamcmd
+    environment:
+      - SESSION_NAME=My ASA Server
+      - SERVER_PASSWORD=Xk9mR4vLpQ2w
+      - SERVER_ADMIN_PASSWORD=Zt7nB5jWeY8s
+      - SERVER_MAP=TheIsland_WP
+      - GAME_PORT=7777
+      - RCON_PORT=27020
+      - EXTRA_FLAGS=-ForceAllowCaveFlyers -ForceRespawnDinos -NoBattlEye
+      - EXTRA_SETTINGS=?ServerCrosshair=true?OverrideOfficialDifficulty=5.0?ShowFloatingDamageText=true?AllowFlyerCarryPvE=true?MaxPlayers=10
     ports:
-      - "${SERVER_PORT}:${SERVER_PORT}/udp"
-      # Uncomment to expose RCON
-      # - "${RCON_PORT}:${RCON_PORT}/tcp"
-    stop_grace_period: 45s
+      - "7777:7777/udp"
+      - "27020:27020/tcp"
+    volumes:
+      - ark-data:/home/steam/ark/ShooterGame/Saved
     deploy:
       resources:
         limits:
-          memory: 16g
-    memswap_limit: 16g
+          memory: 20g
 
 volumes:
-  steam_data:
+  ark-data:
