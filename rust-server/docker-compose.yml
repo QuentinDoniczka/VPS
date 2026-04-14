@@ -18,6 +18,7 @@ services:
       +server.maxplayers 50
       +server.saveinterval 600
       +server.secure 1
+      +server.password 1974
       +server.identity server
       +rcon.ip 0.0.0.0
       +rcon.port 28016

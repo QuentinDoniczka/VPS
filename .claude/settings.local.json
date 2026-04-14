@@ -5,7 +5,10 @@
       "Bash(docker compose:*)",
       "WebSearch",
       "WebFetch(domain:github.com)",
-      "Bash(ssh ubuntu@162.19.226.160 \"sudo docker logs rust-server 2>&1 | grep -c ''done'' && echo ''---'' && sudo docker logs rust-server 2>&1 | tail -3\")"
+      "Bash(ssh ubuntu@162.19.226.160 \"sudo docker logs rust-server 2>&1 | grep -c ''done'' && echo ''---'' && sudo docker logs rust-server 2>&1 | tail -3\")",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:ark.wiki.gg)",
+      "WebFetch(domain:steamcommunity.com)"
     ]
   }
 }

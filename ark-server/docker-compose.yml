@@ -7,11 +7,11 @@ services:
       - SESSION_NAME=My ASA Server
       - SERVER_PASSWORD=Xk9mR4vLpQ2w
       - SERVER_ADMIN_PASSWORD=Zt7nB5jWeY8s
-      - SERVER_MAP=TheIsland_WP
+      - SERVER_MAP=TheCenter_WP
       - GAME_PORT=7777
       - RCON_PORT=27020
       - EXTRA_FLAGS=-ForceAllowCaveFlyers -ForceRespawnDinos -NoBattlEye
-      - EXTRA_SETTINGS=?ServerCrosshair=true?OverrideOfficialDifficulty=5.0?ShowFloatingDamageText=true?AllowFlyerCarryPvE=true?MaxPlayers=10
+      - EXTRA_SETTINGS=?ServerCrosshair=true?OverrideOfficialDifficulty=5.0?ShowFloatingDamageText=true?AllowFlyerCarryPvE=true?MaxPlayers=10?XPMultiplier=0.5?DinoCharacterFoodDrainMultiplier=1?DisableDinoDecayPvE=True?DisableStructureDecayPvE=True?AutoDestroyDecayedDinos=False?BabyMatureSpeedMultiplier=30?BabyCuddleIntervalMultiplier=0.05?BabyImprintAmountMultiplier=30?EggHatchSpeedMultiplier=100?NightTimeSpeedScale=6?DayTimeSpeedScale=0.5?TamingSpeedMultiplier=5
     ports:
       - "7777:7777/udp"
       - "27020:27020/tcp"
