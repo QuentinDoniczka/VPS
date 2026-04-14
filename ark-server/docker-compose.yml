@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     environment:
       - SESSION_NAME=My ASA Server
-      - SERVER_PASSWORD=Xk9mR4vLpQ2w
+      - SERVER_PASSWORD=
       - SERVER_ADMIN_PASSWORD=Zt7nB5jWeY8s
       - SERVER_MAP=TheCenter_WP
       - GAME_PORT=7777
